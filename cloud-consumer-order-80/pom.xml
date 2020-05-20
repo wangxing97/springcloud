@@ -12,6 +12,11 @@
     <artifactId>cloud-consumer-order-80</artifactId>
 
     <dependencies>
+        <!-- 引入Eureka客户端依赖 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.wx.springcloud</groupId>
             <artifactId>cloud-api-common</artifactId>

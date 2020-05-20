@@ -3,13 +3,23 @@ server:
 
 spring:
   application:
-    name: cloud-payment-service
+    name: provider-payment-service
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
     url: jdbc:mysql://101.37.82.236:3306/db2019?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: 774891
+
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.wx.springcloud.entity
+
+eureka:
+  client:
+    #将自己注册到服务中心
+    register-with-eureka: true
+    #是否从Eureka Server获取已经注册的信息，默认为true，单节点无所谓，集群必须设置为true才能配合ribbon使用负载均衡
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka
