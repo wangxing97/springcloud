@@ -18,14 +18,16 @@ import javax.annotation.Resource;
 @RequestMapping("/consumer")
 public class OrderController {
 
-    public static final String PAYMENT_URL = "http://localhost:8001/payment";
+    //public static final String PAYMENT_URL = "http://localhost:8001/payment"; //单机版
+
+    public static final String PAYMENT_URL = "http://PROVIDER-PAYMENT-SERVICE";
 
     @Resource
     private RestTemplate restTemplate;
 
     @GetMapping("/payment/get/{id}")
     public CommonResult<Payment> getPaymentByID(@PathVariable("id") Long id){
-        return restTemplate.getForObject(PAYMENT_URL + "/get/" + id, CommonResult.class);
+        return restTemplate.getForObject(PAYMENT_URL + "/payment/get/" + id, CommonResult.class);
     }
 
     @PostMapping("/payment/create")

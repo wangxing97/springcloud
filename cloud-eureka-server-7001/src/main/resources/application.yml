@@ -2,11 +2,13 @@ server:
   port: 7001
 eureka:
   instance:
-    hostname: localhost #eureka服务区实例名称
+    hostname: eureka7001.com #集群版
+    #hostname: localhost #eureka服务区实例名称 单机版
   client:
     #不注册自己本身
     register-with-eureka: false
     #代表自己就是服务端
     fetch-registry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #单机版
+      defaultZone: http://eureka7002.com:7002/eureka/
