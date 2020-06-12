@@ -11,8 +11,10 @@
         <module name="cloud-provider-payment-8002" />
         <module name="cloud-provider-payment-8001" />
         <module name="cloud-api-common" />
+        <module name="cloud-consumer-order-zk-80" />
         <module name="cloud-eureka-server-7002" />
         <module name="cloud-eureka-server-7001" />
+        <module name="cloud-provider-payment-8004" />
       </profile>
     </annotationProcessing>
   </component>

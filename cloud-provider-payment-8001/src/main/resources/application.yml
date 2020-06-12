@@ -24,3 +24,10 @@ eureka:
     service-url:
       #defaultZone: http://localhost:7001/eureka #单机版
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+  instance:
+    instance-id: payment-8001
+    prefer-ip-address: true
+    #Eureka客户端默认30秒向服务端发送心跳
+    #lease-renewal-interval-in-seconds: 1
+    #Eureka服务端在收到最后一次心跳后等待的时间上限，默认90秒，超时没有收到心跳则剔除服务
+    #lease-expiration-duration-in-seconds: 2

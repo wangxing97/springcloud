@@ -1,14 +1,19 @@
 package com.wx.springcloud.controller;
 
+import com.netflix.discovery.converters.Auto;
 import com.wx.springcloud.entity.CommonResult;
 import com.wx.springcloud.entity.Payment;
 import com.wx.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * Description:
@@ -25,6 +30,9 @@ public class PaymentController {
 
     @Value("${server.port}")
     private String serverPort;
+
+    @Autowired
+    private DiscoveryClient discoveryClient;
 
     @PostMapping("/create")
     public CommonResult createPayment(@RequestBody Payment payment){
@@ -46,5 +54,20 @@ public class PaymentController {
         }else{
             return new CommonResult(444, "获取数据失败");
         }
+    }
+
+    @GetMapping("/get/discover")
+    public Object getDiscover(){
+        //获取注册中心中所有的服务
+        List<String> services = discoveryClient.getServices();
+        for (String service: services) {
+            log.info("element****:" + service);
+        }
+        //获取某个服务下的所有服务实例
+        List<ServiceInstance> instances = discoveryClient.getInstances("PROVIDER-PAYMENT-SERVICE");
+        for (ServiceInstance instance: instances) {
+            log.info("instance****:" + instance.getInstanceId() + "\t" + instance.getHost() + "\t" + instance.getPort() + "\t" + instance.getUri());
+        }
+        return discoveryClient;
     }
 }
