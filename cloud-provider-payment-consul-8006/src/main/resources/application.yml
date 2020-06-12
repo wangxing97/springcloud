@@ -1,0 +1,13 @@
+server:
+  port: 8006
+spring:
+  application:
+    name: provider-payment-8006
+  cloud:
+    consul:
+      host: 101.37.82.236
+      port: 8500
+      discovery:
+        #指定开启ip地址注册
+        prefer-ip-address: true
+        #hostname: 192.168.1.25
