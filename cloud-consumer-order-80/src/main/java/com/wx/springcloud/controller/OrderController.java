@@ -40,11 +40,12 @@ public class OrderController {
 
     @GetMapping("/payment/get/{id}")
     public CommonResult<Payment> getPaymentByID(@PathVariable("id") Long id) {
-        List<ServiceInstance> instances = discoveryClient.getInstances("PROVIDER-PAYMENT-SERVICE");
-        ServiceInstance instance = myLB.instances(instances);
-        URI uri = instance.getUri();
-        //return restTemplate.getForObject(PAYMENT_URL + "/payment/get/" + id, CommonResult.class);
-        return restTemplate.getForObject(uri + "/payment/get/" + id, CommonResult.class);
+        //手写轮询
+        //List<ServiceInstance> instances = discoveryClient.getInstances("PROVIDER-PAYMENT-SERVICE");
+        //ServiceInstance instance = myLB.instances(instances);
+        //URI uri = instance.getUri();
+        //return restTemplate.getForObject(uri + "/payment/get/" + id, CommonResult.class);
+        return restTemplate.getForObject(PAYMENT_URL + "/payment/get/" + id, CommonResult.class);
     }
 
     @GetMapping("/payment/getForEntity/{id}")

@@ -5,8 +5,6 @@
       <change beforePath="$PROJECT_DIR$/cloud-consumer-order-80/src/main/java/com/wx/springcloud/ConsumerMain80.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order-80/src/main/java/com/wx/springcloud/ConsumerMain80.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-consumer-order-80/src/main/java/com/wx/springcloud/config/ApplicationContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order-80/src/main/java/com/wx/springcloud/config/ApplicationContextConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-consumer-order-80/src/main/java/com/wx/springcloud/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order-80/src/main/java/com/wx/springcloud/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order-80/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order-80/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment-8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment-8001/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -244,7 +242,7 @@
       <workItem from="1591838932507" duration="11770000" />
       <workItem from="1591943759052" duration="7228000" />
       <workItem from="1592201148031" duration="3720000" />
-      <workItem from="1592280198276" duration="1540000" />
+      <workItem from="1592280198276" duration="1733000" />
     </task>
     <task id="LOCAL-00001" summary="初始化父工程">
       <created>1589949258915</created>
