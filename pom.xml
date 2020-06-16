@@ -18,6 +18,7 @@
         <module>cloud-consumer-order-zk-80</module>
         <module>cloud-provider-payment-consul-8006</module>
         <module>cloud-consumer-order-consul-80</module>
+        <module>cloud-consumer-order-feign-80</module>
     </modules>
     <packaging>pom</packaging>
     <!-- 统一管理jar包版本 -->

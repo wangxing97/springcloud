@@ -10,7 +10,7 @@ eureka:
     #代表自己就是服务端
     fetch-registry: false
     service-url:
-      #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #单机版
-      defaultZone: http://eureka7002.com:7002/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #单机版
+      #defaultZone: http://eureka7002.com:7002/eureka/
 #  server: #默认开启自动保护，false关闭
 #    enable-self-preservation: false

@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Description:
@@ -54,6 +55,12 @@ public class PaymentController {
         }else{
             return new CommonResult(444, "获取数据失败");
         }
+    }
+
+    @GetMapping("/get/timeout")
+    public String paymentFeignTimeout() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(3);
+        return serverPort;
     }
 
     @GetMapping("/get/discover")
