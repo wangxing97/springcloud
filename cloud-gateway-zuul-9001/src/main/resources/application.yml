@@ -1,0 +1,23 @@
+server:
+  port: 9001
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: gateway-zuul-9001
+
+spring:
+  application:
+    name: gateway-zuul-9001
+zuul:
+  routes:
+    provider-payment-service: /provider/**
+  ignored-services: "*"
+  prefix: /zuul
+  servlet-path: /
+  MyZuulFilter: #自定义Filter类名
+    pre:  #Type
+      disable: true #true禁用

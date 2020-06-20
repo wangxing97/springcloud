@@ -9,10 +9,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.http.HttpRequest;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import java.util.Enumeration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -47,7 +50,9 @@ public class PaymentController {
     }
 
     @GetMapping("/get/{id}")
-    public CommonResult getPaymentById(@PathVariable("id") Long id){
+    public CommonResult getPaymentById(@PathVariable("id") Long id, HttpServletRequest request){
+        String token = request.getHeader("Authorization");
+        log.info("*****Token：" + token);
         Payment pay = paymentService.getPaymentById(id);
         log.info("*****查询结果:"+pay);
         if(!StringUtils.isEmpty(pay)){

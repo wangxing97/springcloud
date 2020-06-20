@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0ad5c55-4202-4cfb-94f9-9aa0371eb2ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment-hystrix-8001/src/main/java/com/wx/springcloud/PaymenHystrixMain8001.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment-hystrix-8001/src/main/java/com/wx/springcloud/PaymenHystrixMain8001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment-8001/src/main/java/com/wx/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment-8001/src/main/java/com/wx/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,23 +102,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DashBoardMain9001">
+  <component name="RunManager" selected="Spring Boot.GatewayZuulMain9001">
     <configuration name="ConsumerConsul80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-consumer-order-consul-80" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.ConsumerConsul80" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConsumerFeign80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-consumer-order-feign-80" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wx.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.ConsumerFeign80" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,6 +164,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GatewayZuulMain9001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-gateway-zuul-9001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wx.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.GatewayZuulMain9001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PaymenHystrixMain8001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-provider-payment-hystrix-8001" />
       <extension name="coverage">
@@ -202,6 +203,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PaymentMain8002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-provider-payment-8002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.PaymentMain8002" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PaymentMain8004" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-provider-payment-8004" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.PaymentMain8004" />
@@ -218,11 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.GatewayZuulMain9001" />
+        <item itemvalue="Spring Boot.PaymentMain8001" />
         <item itemvalue="Spring Boot.DashBoardMain9001" />
         <item itemvalue="Spring Boot.PaymenHystrixMain8001" />
         <item itemvalue="Spring Boot.ConsumerHystrix80" />
-        <item itemvalue="Spring Boot.ConsumerFeign80" />
-        <item itemvalue="Spring Boot.PaymentMain8001" />
       </list>
     </recent_temporary>
   </component>
@@ -240,6 +248,11 @@
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@be180180" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@2b6e9081" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@be180180" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1a6849ec" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -269,7 +282,7 @@
       <workItem from="1591943759052" duration="7228000" />
       <workItem from="1592201148031" duration="3720000" />
       <workItem from="1592280198276" duration="10094000" />
-      <workItem from="1592619149660" duration="1839000" />
+      <workItem from="1592619149660" duration="8651000" />
     </task>
     <task id="LOCAL-00001" summary="初始化父工程">
       <created>1589949258915</created>
