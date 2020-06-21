@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0ad5c55-4202-4cfb-94f9-9aa0371eb2ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment-8001/src/main/java/com/wx/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment-8001/src/main/java/com/wx/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment-8002/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment-8002/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -102,7 +102,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayZuulMain9001">
+  <component name="RunManager" selected="Spring Boot.GatewayMain9001">
     <configuration name="ConsumerConsul80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-consumer-order-consul-80" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.ConsumerConsul80" />
@@ -110,15 +110,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsumerHystrix80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-consumer-order-feign-hystrix-80" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wx.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.ConsumerHystrix80" />
+    <configuration name="ConsumerFeign80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-consumer-order-feign-80" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.ConsumerFeign80" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,6 +154,19 @@
     <configuration name="EurekaServer7002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-eureka-server-7002" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.EurekaServer7002" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayMain9001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-gateway-gateway-9001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wx.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.GatewayMain9001" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -226,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GatewayZuulMain9001" />
+        <item itemvalue="Spring Boot.GatewayMain9001" />
         <item itemvalue="Spring Boot.PaymentMain8001" />
+        <item itemvalue="Spring Boot.GatewayZuulMain9001" />
         <item itemvalue="Spring Boot.DashBoardMain9001" />
         <item itemvalue="Spring Boot.PaymenHystrixMain8001" />
-        <item itemvalue="Spring Boot.ConsumerHystrix80" />
       </list>
     </recent_temporary>
   </component>
@@ -242,22 +249,17 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@be180180" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4cb8ebd1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@be180180" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@2b6e9081" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4cb8ebd1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@75f312a3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@be180180" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1a6849ec" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@be180180" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@98ecc5cf" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4cb8ebd1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6ffd12ea" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -282,7 +284,8 @@
       <workItem from="1591943759052" duration="7228000" />
       <workItem from="1592201148031" duration="3720000" />
       <workItem from="1592280198276" duration="10094000" />
-      <workItem from="1592619149660" duration="8651000" />
+      <workItem from="1592619149660" duration="9131000" />
+      <workItem from="1592730475727" duration="1823000" />
     </task>
     <task id="LOCAL-00001" summary="初始化父工程">
       <created>1589949258915</created>

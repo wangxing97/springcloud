@@ -23,6 +23,7 @@
         <module>cloud-consumer-order-feign-hystrix-80</module>
         <module>cloud-consumer-hystrix-dashboard-9001</module>
         <module>cloud-gateway-zuul-9001</module>
+        <module>cloud-gateway-gateway-9001</module>
     </modules>
     <packaging>pom</packaging>
     <!-- 统一管理jar包版本 -->
