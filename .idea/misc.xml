@@ -5,6 +5,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-config-center-3001/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-config-client-3002/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-config-client-3003/pom.xml" />
       </list>
     </option>
   </component>

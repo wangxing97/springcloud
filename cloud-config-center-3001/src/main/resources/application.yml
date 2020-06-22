@@ -1,0 +1,32 @@
+server:
+  port: 3001
+
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wangxing97/springcloud-config.git #仓库地址
+          search-paths:
+            - springcloud-config
+      label: master #分支
+  devtools:
+    add-properties: false
+  #配置消息中间件
+  rabbitmq:
+    host: 101.37.82.236
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"

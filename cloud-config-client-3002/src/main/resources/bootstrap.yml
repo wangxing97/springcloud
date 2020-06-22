@@ -1,0 +1,27 @@
+server:
+  port: 3002
+spring:
+  application:
+    name: cloud-config-client
+  cloud:
+    config:
+      label: master #分支
+      name: config #配置文件名，默认aaa-bbb，aaa为文件名,bbb为什么环境
+      profile: dev #开发环境
+      uri: http://localhost:3001 #配置中心地址
+  #配置消息中间件
+  rabbitmq:
+    host: 101.37.82.236
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
