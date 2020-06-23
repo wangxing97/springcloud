@@ -11,21 +11,24 @@
         <module name="cloud-provider-payment-8001" />
         <module name="cloud-eureka-server-7002" />
         <module name="cloud-eureka-server-7001" />
-        <module name="cloud-provider-payment-hystrix-8001" />
+        <module name="cloud-stream-rabbitmq-consumer-8802" />
+        <module name="cloud-stream-rabbitmq-consumer-8803" />
+        <module name="cloud-consumer-order-feign-hystrix-80" />
+        <module name="cloud-config-client-3002" />
         <module name="cloud-consumer-order-80" />
         <module name="cloud-provider-payment-consul-8006" />
         <module name="cloud-consumer-hystrix-dashboard-9001" />
         <module name="cloud-config-center-3001" />
         <module name="cloud-consumer-order-consul-80" />
+        <module name="cloud-consumer-order-zk-80" />
         <module name="cloud-api-common" />
         <module name="cloud-gateway-zuul-9001" />
         <module name="cloud-gateway-gateway-9001" />
-        <module name="cloud-config-client-3002" />
-        <module name="cloud-config-client-3003" />
-        <module name="cloud-consumer-order-zk-80" />
+        <module name="cloud-stream-rabbitmq-provider-8801" />
+        <module name="cloud-provider-payment-hystrix-8001" />
         <module name="cloud-consumer-order-feign-80" />
         <module name="cloud-provider-payment-8004" />
-        <module name="cloud-consumer-order-feign-hystrix-80" />
+        <module name="cloud-config-client-3003" />
       </profile>
     </annotationProcessing>
   </component>
