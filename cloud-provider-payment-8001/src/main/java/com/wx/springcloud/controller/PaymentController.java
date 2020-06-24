@@ -1,5 +1,6 @@
 package com.wx.springcloud.controller;
 
+import cn.hutool.core.util.IdUtil;
 import com.netflix.discovery.converters.Auto;
 import com.wx.springcloud.entity.CommonResult;
 import com.wx.springcloud.entity.Payment;
@@ -81,5 +82,11 @@ public class PaymentController {
             log.info("instance****:" + instance.getInstanceId() + "\t" + instance.getHost() + "\t" + instance.getPort() + "\t" + instance.getUri());
         }
         return discoveryClient;
+    }
+
+    @GetMapping("/zipkin")
+    public String paymentZipkin()
+    {
+        return "payment - zipkin order : " + IdUtil.randomUUID();
     }
 }

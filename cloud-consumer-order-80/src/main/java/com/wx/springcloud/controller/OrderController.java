@@ -1,5 +1,6 @@
 package com.wx.springcloud.controller;
 
+import cn.hutool.core.util.IdUtil;
 import com.wx.springcloud.entity.CommonResult;
 import com.wx.springcloud.entity.Payment;
 import com.wx.springcloud.lb.MyLB;
@@ -68,5 +69,11 @@ public class OrderController {
     public CommonResult createPayment(Payment payment) {
         log.info("****:" + payment);
         return restTemplate.postForObject(PAYMENT_URL + "/payment/create", payment, CommonResult.class);
+    }
+
+    @GetMapping("/payment/zipkin")
+    public String paymentZipkin()
+    {
+        return restTemplate.getForObject(PAYMENT_URL + "/payment/zipkin", String.class);
     }
 }
