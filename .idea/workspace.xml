@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0ad5c55-4202-4cfb-94f9-9aa0371eb2ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order-80/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order-80/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order-80/src/main/java/com/wx/springcloud/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order-80/src/main/java/com/wx/springcloud/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order-80/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order-80/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment-8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment-8001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment-8001/src/main/java/com/wx/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment-8001/src/main/java/com/wx/springcloud/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment-8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment-8001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,8 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="mapper" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -77,19 +72,21 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/cloud-provider-payment-consul-8006/src/main/java/com/wx/springcloud" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-config-client-3003" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-alibaba-provier-payment-9002/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15527344" />
     <property name="project.structure.side.proportion" value="0.33641618" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\MyIdeaCode\cloud2020\cloud-consumer-order-80\src\main\resources" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyIdeaCode\cloud2020\cloud-alibaba-provier-payment-9002\src\main\java" />
+      <recent name="D:\MyIdeaCode\cloud2020\cloud-alibaba-provier-payment-9002\src\main\resources" />
       <recent name="D:\MyIdeaCode\cloud2020\cloud-api-common\src\main\java\com\wx\springcloud\entity" />
       <recent name="D:\MyIdeaCode\cloud2020\cloud-consumer-order-80\src\main\java\com\wx\springcloud" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyIdeaCode\cloud2020\cloud-consumer-order-80\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -109,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.StreamConsumerMain8803">
+  <component name="RunManager" selected="Spring Boot.ConsumerNacosMain80">
     <configuration name="ConfigCenterMain3001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-config-center-3001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.ConfigCenterMain3001" />
@@ -117,27 +114,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigClientMain3002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ConfigClientMain3002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-config-client-3002" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wx.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.ConfigClientMain3002" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigClientMain3003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ConfigClientMain3003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-config-client-3003" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wx.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.ConfigClientMain3003" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,6 +152,19 @@
     <configuration name="ConsumerMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-consumer-order-80" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.ConsumerMain80" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumerNacosMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-alibaba-consumer-order-nacos-80" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wx.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.ConsumerNacosMain80" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -248,6 +246,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PaymentNacosMain9001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-alibaba-provier-payment-9001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wx.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.PaymentNacosMain9001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentNacosMain9002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-alibaba-provier-payment-9002" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="springcloud.PaymentNacosMain9002" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StreamConsumerMain8802" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-stream-rabbitmq-consumer-8802" />
       <extension name="coverage">
@@ -274,26 +298,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamProviderMain8801" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-stream-rabbitmq-provider-8801" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wx.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.StreamProviderMain8801" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ConsumerNacosMain80" />
+        <item itemvalue="Spring Boot.PaymentNacosMain9002" />
+        <item itemvalue="Spring Boot.PaymentNacosMain9001" />
         <item itemvalue="Spring Boot.StreamConsumerMain8803" />
         <item itemvalue="Spring Boot.StreamConsumerMain8802" />
-        <item itemvalue="Spring Boot.StreamProviderMain8801" />
-        <item itemvalue="Spring Boot.ConfigClientMain3003" />
-        <item itemvalue="Spring Boot.ConfigClientMain3002" />
       </list>
     </recent_temporary>
   </component>
@@ -305,17 +316,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4485cc5d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f0e57ff4" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4485cc5d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@dd5dd53b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4485cc5d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d6edc3c9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f0e57ff4" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@bb6a46b2" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -343,7 +349,9 @@
       <workItem from="1592619149660" duration="9131000" />
       <workItem from="1592730475727" duration="1823000" />
       <workItem from="1592883119574" duration="5200000" />
-      <workItem from="1592969604944" duration="948000" />
+      <workItem from="1592969604944" duration="2397000" />
+      <workItem from="1593065720070" duration="616000" />
+      <workItem from="1593146426873" duration="3532000" />
     </task>
     <task id="LOCAL-00001" summary="初始化父工程">
       <created>1589949258915</created>

@@ -11,6 +11,9 @@
         <module>cloud-provider-payment-8001</module>
         <module>cloud-consumer-order-80</module>
         <module>cloud-api-common</module>
+        <module>cloud-config-center-3001</module>
+        <module>cloud-config-client-3002</module>
+        <module>cloud-config-client-3003</module>
         <module>cloud-eureka-server-7001</module>
         <module>cloud-eureka-server-7002</module>
         <module>cloud-provider-payment-8002</module>
@@ -27,6 +30,9 @@
         <module>cloud-stream-rabbitmq-provider-8801</module>
         <module>cloud-stream-rabbitmq-consumer-8802</module>
         <module>cloud-stream-rabbitmq-consumer-8803</module>
+        <module>cloud-alibaba-provier-payment-9001</module>
+        <module>cloud-alibaba-provier-payment-9002</module>
+        <module>cloud-alibaba-consumer-order-nacos-80</module>
     </modules>
     <packaging>pom</packaging>
     <!-- 统一管理jar包版本 -->

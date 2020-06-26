@@ -1,0 +1,14 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: nacos-payment-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 101.37.82.236:1111 #此处使用的是nginx代理端口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
