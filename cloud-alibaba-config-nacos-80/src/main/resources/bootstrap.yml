@@ -1,0 +1,14 @@
+server:
+  port: 80
+spring:
+  application:
+    name: nacos-config-client
+  cloud:
+    nacos:
+      config:
+        server-addr: 101.37.82.236:8848
+        file-extension: yaml #指定配置文件的格式
+        group: dev-group
+        namespace: 0f883bb4-c160-4f75-b4c3-5647adc096f9
+      discovery:
+        server-addr: 101.37.82.236:8848

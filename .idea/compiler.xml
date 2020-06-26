@@ -12,6 +12,7 @@
         <module name="cloud-eureka-server-7002" />
         <module name="cloud-eureka-server-7001" />
         <module name="cloud-alibaba-consumer-order-nacos-80" />
+        <module name="cloud-alibaba-config-nacos-80" />
         <module name="cloud-consumer-order-feign-hystrix-80" />
         <module name="cloud-alibaba-provier-payment-9001" />
         <module name="cloud-config-client-3002" />

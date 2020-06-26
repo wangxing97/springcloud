@@ -106,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConsumerNacosMain80">
+  <component name="RunManager" selected="Spring Boot.NacosConfigMain80">
     <configuration name="ConfigCenterMain3001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-config-center-3001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.ConfigCenterMain3001" />
@@ -211,6 +211,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NacosConfigMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-alibaba-config-nacos-80" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wx.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.NacosConfigMain80" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PaymenHystrixMain8001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-provider-payment-hystrix-8001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.PaymenHystrixMain8001" />
@@ -272,19 +285,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamConsumerMain8802" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-stream-rabbitmq-consumer-8802" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wx.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.StreamConsumerMain8802" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StreamConsumerMain8803" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-stream-rabbitmq-consumer-8803" />
       <extension name="coverage">
@@ -298,13 +298,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StreamProviderMain8801" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-stream-rabbitmq-provider-8801" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.StreamProviderMain8801" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.NacosConfigMain80" />
         <item itemvalue="Spring Boot.ConsumerNacosMain80" />
         <item itemvalue="Spring Boot.PaymentNacosMain9002" />
         <item itemvalue="Spring Boot.PaymentNacosMain9001" />
         <item itemvalue="Spring Boot.StreamConsumerMain8803" />
-        <item itemvalue="Spring Boot.StreamConsumerMain8802" />
       </list>
     </recent_temporary>
   </component>
@@ -321,7 +328,7 @@
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f0e57ff4" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@bb6a46b2" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@3ec4475b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -351,7 +358,7 @@
       <workItem from="1592883119574" duration="5200000" />
       <workItem from="1592969604944" duration="2397000" />
       <workItem from="1593065720070" duration="616000" />
-      <workItem from="1593146426873" duration="3532000" />
+      <workItem from="1593146426873" duration="7675000" />
     </task>
     <task id="LOCAL-00001" summary="初始化父工程">
       <created>1589949258915</created>
