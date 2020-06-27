@@ -1,0 +1,18 @@
+server:
+  port: 9003
+spring:
+  application:
+    name: cloud-sentinel-9003
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+        port: 8719
+    nacos:
+      discovery:
+        server-addr: 101.37.82.236:8848
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
