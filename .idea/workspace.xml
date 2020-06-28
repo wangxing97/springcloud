@@ -76,7 +76,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15527344" />
     <property name="project.structure.side.proportion" value="0.33641618" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -106,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.NacosConfigMain80">
+  <component name="RunManager" selected="Spring Boot.OrderSentinelMain80">
     <configuration name="ConfigCenterMain3001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-config-center-3001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.ConfigCenterMain3001" />
@@ -152,19 +152,6 @@
     <configuration name="ConsumerMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-consumer-order-80" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.ConsumerMain80" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConsumerNacosMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-alibaba-consumer-order-nacos-80" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wx.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.ConsumerNacosMain80" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -224,6 +211,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrderSentinelMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-consumer-order-sentinel-80" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wx.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.OrderSentinelMain80" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PaymenHystrixMain8001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-provider-payment-hystrix-8001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.PaymenHystrixMain8001" />
@@ -259,40 +259,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaymentNacosMain9001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-alibaba-provier-payment-9001" />
+    <configuration name="PaymentSentinelMain9003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-alibaba-provider-payment-sentinel-9003" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.wx.springcloud.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.PaymentNacosMain9001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.PaymentSentinelMain9003" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaymentNacosMain9002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-alibaba-provier-payment-9002" />
+    <configuration name="PaymentSentinelMain9004" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-alibaba-provider-payment-sentinel-9004" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="springcloud.*" />
+          <option name="PATTERN" value="com.wx.springcloud.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="springcloud.PaymentNacosMain9002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.PaymentSentinelMain9004" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamConsumerMain8803" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="SentinelMain9003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-alibaba-sentinel-9003" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wx.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.SentinelMain9003" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamConsumerMain8802" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-stream-rabbitmq-consumer-8802" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.StreamConsumerMain8802" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamConsumerMain8803" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-stream-rabbitmq-consumer-8803" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wx.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wx.springcloud.StreamConsumerMain8803" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -307,11 +321,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.OrderSentinelMain80" />
+        <item itemvalue="Spring Boot.PaymentSentinelMain9004" />
+        <item itemvalue="Spring Boot.PaymentSentinelMain9003" />
+        <item itemvalue="Spring Boot.SentinelMain9003" />
         <item itemvalue="Spring Boot.NacosConfigMain80" />
-        <item itemvalue="Spring Boot.ConsumerNacosMain80" />
-        <item itemvalue="Spring Boot.PaymentNacosMain9002" />
-        <item itemvalue="Spring Boot.PaymentNacosMain9001" />
-        <item itemvalue="Spring Boot.StreamConsumerMain8803" />
       </list>
     </recent_temporary>
   </component>
@@ -323,12 +337,17 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f0e57ff4" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c6da5291" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f0e57ff4" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@3ec4475b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c6da5291" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@79df6a90" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c6da5291" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@963a97a1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -358,7 +377,9 @@
       <workItem from="1592883119574" duration="5200000" />
       <workItem from="1592969604944" duration="2397000" />
       <workItem from="1593065720070" duration="616000" />
-      <workItem from="1593146426873" duration="7675000" />
+      <workItem from="1593146426873" duration="12868000" />
+      <workItem from="1593225351633" duration="13190000" />
+      <workItem from="1593325621458" duration="7369000" />
     </task>
     <task id="LOCAL-00001" summary="初始化父工程">
       <created>1589949258915</created>
@@ -395,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589978736930</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="整合Sentinel实现限流">
+      <created>1593270134381</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1593270134381</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,6 +448,7 @@
     <MESSAGE value="初始化消费者模块" />
     <MESSAGE value="抽取公共实体部分" />
     <MESSAGE value="项目改造使用Eureka注册" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目改造使用Eureka注册" />
+    <MESSAGE value="整合Sentinel实现限流" />
+    <option name="LAST_COMMIT_MESSAGE" value="整合Sentinel实现限流" />
   </component>
 </project>

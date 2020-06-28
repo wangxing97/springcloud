@@ -1,0 +1,14 @@
+server:
+  port: 9004
+spring:
+  application:
+    name: cloud-sentinel-payment-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 101.37.82.236:8848
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
